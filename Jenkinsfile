@@ -5,6 +5,7 @@ pipeline {
             agent {
                 docker {
                     image 'nginx' 
+                    args '-v .:/usr/share/nginx/html  -p 9090:80'
                 }
             }
             steps {
