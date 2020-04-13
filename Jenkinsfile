@@ -3,7 +3,9 @@ pipeline {
     stages {
           stage('deploy on docker') {
             agent {
-                docker { image 'maven:nginx' }
+                docker {
+                    image 'nginx' 
+                }
             }
             steps {
                 sh 'echo "hello world"'
