@@ -6,7 +6,7 @@ pipeline {
                 docker { image 'maven:nginx' }
             }
             steps {
-                sh 'mvn --version'
+                sh 'echo "hello world"'
             }
         }
     }
