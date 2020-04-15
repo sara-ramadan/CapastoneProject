@@ -7,7 +7,7 @@ pipeline {
     
         stage("lint HTML") {
            steps {
-                sh "docker build -t CapstoneProject ."
+                 sh 'tidy -q -e *.html'
             }
         }
     
@@ -30,12 +30,6 @@ pipeline {
             steps {
                 sh "docker push ${registry}"
             }
-        }
-    }
-    post {
-        success {
-            echo 'ending'
-            build job: 'TestJob-CD'
         }
     }
 }
