@@ -13,7 +13,7 @@ pipeline {
     
         stage("Docker Build") {
             steps {
-                sh "docker build -t CapstoneProject ."
+                sh "docker build -t capstoneproject ."
             }
         }
         stage("ECR Login") {
