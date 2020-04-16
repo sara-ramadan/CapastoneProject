@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        registry = '768362009725.dkr.ecr.us-east-1.amazonaws.com/capstone_udacity_project/capstoneproject:latest'
+        registry = '768362009725.dkr.ecr.us-east-1.amazonaws.com/capstone_udacity_project:latest'
     }
     stages {
     
@@ -13,7 +13,8 @@ pipeline {
     
         stage("Docker Build") {
             steps {
-                sh "docker build -t capstoneproject:latest ."
+                sh "docker build -t capstone_udacity_project ."
+                sh "docker tag capstone_udacity_project:latest ${registry}"
             }
         }
         stage("ECR Login") {
