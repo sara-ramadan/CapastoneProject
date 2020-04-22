@@ -15,4 +15,7 @@ d. install docker
 9. run this command to connect with your cluster "aws eks update-kubeconfig --name yourclustername"
 10. build your docker image by this command "docker build -t capstonedocker ."  -> as it searches for the Dockerfile in the current directory
 11. to list image now run "docker image ls"
-12. run this command 
+12. run this command "kubectl apply -f blue-controller.json", "kubectl apply -f green-controller.json"
+13. run this command 
+
+
