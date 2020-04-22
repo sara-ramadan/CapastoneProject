@@ -1,5 +1,7 @@
 follow this link to create cluster and attach them with nodes.
 https://docs.aws.amazon.com/eks/latest/userguide/getting-started-console.html
+https://logz.io/blog/amazon-eks-cluster/
+
 1. create iam user for you to use it in the next steps
 2. creating stack for vpc and subnets 
 3. creating stack for nodes role
