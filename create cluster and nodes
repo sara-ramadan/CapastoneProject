@@ -32,6 +32,9 @@ kubectl create secret docker-registry registry-secret \
 21.if you open the pages-service.json and change selector from page1 to page 2 then rerun the command "kubectl apply -f pages2-controller.json" hint the websie again, you will find the website changed to the page2
 
 
+there are 2 types of deployment (rolling or blue-green)
+1- rolling means that you need to change index.html to contain addaitional part not added in the first index
+2- blue-green -> to make 2 index.html but by changing the color (green and the other with blue)
 
 
 
