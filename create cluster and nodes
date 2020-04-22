@@ -19,6 +19,8 @@ d. install docker
 13. run this command "kubectl apply -f blue-green.service.json"
 13. run this command to see the services created  "kubectl get svc" and here you will see the endpoint and port so you can run your applicatin
 14.make sure that you open the port which used in the blue-green.service.json either in your pc or ec2 instance
+15.kubectl delete daemonsets,replicasets,services,deployments,pods,rc --all -> to delete all pods, deployments,... if you need 
+
 
 
 
