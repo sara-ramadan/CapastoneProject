@@ -13,5 +13,6 @@ c.kubectl: https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
 d. install docker
 8. then run "aws configure" and use the iam user you created the 1st time.
 9. run this command to connect with your cluster "aws eks update-kubeconfig --name yourclustername"
-10. build your docker image by this command "docker build --tag=capstoneprojectdocker ."  -> as it searches for the Dockerfile in the current directory
-11.
+10. build your docker image by this command "docker build -t capstonedocker ."  -> as it searches for the Dockerfile in the current directory
+11. to list image now run "docker image ls"
+12. run this command 
